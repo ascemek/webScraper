@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Product 1",
+        "description": "Description of product 1",
+        "price": "9,91"
+    },
+    {
+        "title": "Product 2",
+        "description": "Description of product 2",
+        "price": "9,92"
+    },
+    {
+        "title": "Product 3",
+        "description": "Description of product 3",
+        "price": "9,93"
+    },
+    {
+        "title": "Product 4",
+        "description": "Description of product 4",
+        "price": "9,94"
+    },
+    {
+        "title": "Product 5",
+        "description": "Description of product 5",
+        "price": "9,95"
+    },
+    {
+        "title": "Product 6",
+        "description": "Description of product 6",
+        "price": "9,96"
+    }
+]

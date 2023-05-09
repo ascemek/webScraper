@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Test HTML</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Test HTML">
+        <meta name="keywords" content="Test HTML">
+        <meta name="author" content="Test HTML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="products.json"></script>
+    </head>
+
+    <body>
+        <h1>Test HTML WITH JSON</h1>
+        <p>Test HTML</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product name</th>
+                    <th>Product Description</th>
+                    <th>Product Price</th>
+                </tr>
+            </thead>
+            <tbody id="data-output">
+                <!-- Prodcuts from javascript file in here. -->
+            </tbody>
+        </table>
+
+        <p id="data"></p>
+        <script type="text/javascript">
+            fetch('./products.json')
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    //appendData(data);
+                    for (var i = 0; i < data.length; i++) {
+                        document.getElementById("data-output").innerHTML += '<tr><td>' + data[i].title + '</td><td>' + data[i].description + '</td><td>' + data[i].price + '</td></tr>';
+                    }
+                })
+        </script>
+    </body>
+</html>
